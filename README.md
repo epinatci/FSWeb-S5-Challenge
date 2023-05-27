@@ -53,7 +53,24 @@ Aşağıda listelenen minimum uygulanabilir ürün (MVP) spesifikasyonlarını k
 Aşağıdaki soruları yanıtlayarak bu sprint'in kavramlarını anladığınızı gösterin. Her sorudan sonra yanıtlarınızı eklemek için bu belgeyi düzenleyin.
 
 1. DOM nedir?
+DOM (Document Object Module) HTML dökümanları içerisinde bulunan nesnelere kolaylıkla erişim sağlamak ve üzerinde işlemler yapabilmek için tasarlanan bir modeldir. DOM ile HTML dosyamızda bulunan her şeye erişim sağlayabilirsiniz.
+
 2. Bir event nedir?
+Olay (Event) arabirimi, DOM'da gerçekleşen herhangi bir olayı temsil eder; Bazıları kullanıcı tarafından üretilen (mouse veya klavye etkinlikleri gibi) diğerleri ise API'lar tarafından üretilir (bir animasyonun çalışıp çalışmadığını, videolar duraklatıldığını gösteren etkinlikler gibi). Birçok olay türü vardır, bunların bazıları ana Olay arayüzüne dayalı diğer arayüzleri kullanır. Olayın kendisi, tüm olaylarda ortak olan özellikleri ve methodları içerir.
+
 3. Bir event dinleyici(listener) nedir?
+Bazen bir web sayfası oluştururken, biri web sitenizde belirli bir etkinlik türünü tetiklediğinde bir kod parçası yürütmek isteyebilirsiniz.
+Javascript addEventListener methodu ile bunu hızlı ve kolay bir şekilde yapabilirsiniz.
+addEventListener() methodu, belirtilen öğeye bir olay işleyicisini ekler. Bu olay meydana geldiğinde, dinleyici fonksiyon yürütülür. Bu method bir değer döndürmez.
+
 4. Neden bir NodeList'i Array'e dönüştürelim??
+JavaScript'te bir NodeList'i Array'e dönüştürmenin birkaç nedeni vardır. İşte bazıları:
+
+Daha fazla dizi yöntemine erişim: NodeList, Array'in bir alt kümesidir ve yalnızca NodeList'e özgü yöntemlere sahiptir. Bunlar, forEach, map, filter, ve reduce gibi kullanışlı dizi yöntemlerini içermez. Eğer bu dizi yöntemlerini kullanmak isterseniz, NodeList'i Array'e dönüştürerek bu yöntemlere erişebilirsiniz.
+
+Genel olarak daha fazla esneklik: Array'ler, dinamik boyutlara sahip olabilirken NodeList'ler sabit bir boyuta sahiptir. NodeList'i Array'e dönüştürerek, elemanları ekleyebilir, çıkarabilir veya değiştirebilirsiniz.
+
+Tarayıcı uyumluluğu: NodeList, bazı tarayıcılarda ve eski tarayıcı sürümlerinde kullanılan bir türdür. Bazı durumlarda, NodeList'i Array'e dönüştürerek tarayıcı uyumluluğunu artırabilirsiniz.
+
 5. Bileşen nedir?
+Web Bileşenleri, yeniden kullanılabilir özel öğeler oluşturmanıza olanak tanıyan farklı teknolojilerden oluşan bir pakettir ( işlevleri kodunuzun geri kalanından uzakta kapsüllenerek ) ve bunları web uygulamalarınızda kullanın.
